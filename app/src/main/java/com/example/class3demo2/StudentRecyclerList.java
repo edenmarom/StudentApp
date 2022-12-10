@@ -7,10 +7,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
@@ -93,7 +91,11 @@ public class StudentRecyclerList extends AppCompatActivity {
 
     public class rowClickedListener implements OnItemClickListener{
         public void onItemClick(int pos){
-            Log.d("pos","Item clicked");
+            Intent intent = new Intent(StudentRecyclerList.this, StudentDetails.class);
+            Bundle b = new Bundle();
+            b.putInt("pos", pos);
+            intent.putExtras(b);
+            startActivity(intent);
         }
     }
 

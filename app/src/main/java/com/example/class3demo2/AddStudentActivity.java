@@ -11,8 +11,6 @@ import android.widget.TextView;
 import com.example.class3demo2.model.Student;
 import com.example.class3demo2.model.Model;
 
-import java.util.List;
-
 public class AddStudentActivity extends AppCompatActivity {
 
     StudentRecyclerList.StudentRecyclerAdapter adapter = null;
@@ -25,9 +23,8 @@ public class AddStudentActivity extends AppCompatActivity {
         EditText idEt = findViewById(R.id.addstudent_id);
         EditText phoneEt = findViewById(R.id.addstudent_phone);
         EditText addressEt = findViewById(R.id.addstudent_address);
-        CheckBox checkEt = findViewById(R.id.addstudent_check);
+        CheckBox checkEt = findViewById(R.id.studentDetails_check_dispaly);
 
-        TextView messageTv = findViewById(R.id.addstudent_message);//TODO add msg after saving
         Button saveBtn = findViewById(R.id.addstudent_save_btn);
         Button cancelBtn = findViewById(R.id.addstudent_cancel_btn);
 
