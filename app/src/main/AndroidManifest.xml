@@ -25,22 +25,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".StudentListActivity"
-            android:exported="true">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-
-
-        </activity>
-        <activity
-            android:name=".Xmixdrix"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".AddStudentActivity"
             android:exported="false">
             <meta-data

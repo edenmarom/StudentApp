@@ -9,11 +9,7 @@ public class Model {
     public static Model instance(){
         return _instance;
     }
-    private Model(){
-        for(int i=0;i<20;i++){
-            addStudent(new Student("name " + i,""+i,"",false));
-        }
-    }
+    private Model(){}
 
     List<Student> data = new LinkedList<>();
     public List<Student> getAllStudents(){
